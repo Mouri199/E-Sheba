@@ -5,7 +5,7 @@ import img4 from '/h1-image4.jpg'
 
 const DoctorSpecialist = () => {
     return (
-        <div className='mt-20 lg:flex justify-center items-center gap-10 lg:mx-[120px]'>
+        <div className='mt-20 lg:flex justify-center items-center gap-10'>
             <div className='flex gap-7'>
                 <div>
                     <img className='h-[500px]' src={img1} alt="" />

@@ -3,9 +3,9 @@ import banner from '/banner.png'
 const Banner = () => {
     return (
         <div>
-            <div className='lg:flex justify-around items-center bg-[#E1EEFF]  lg:px-[120px]'>
-                <div className='px-5'>
-                    <h1 className="lg:text-6xl text-3xl lg:mt-0+- font-bold">Find & Search Your <br />
+            <div className='lg:flex justify-around items-center bg-[#E1EEFF]'>
+                <div className='px-5 lg:px-0'>
+                    <h1 className="lg:text-6xl text-3xl font-bold">Find & Search Your <br />
                         <span className="text-[#0360D9]">Favourite</span> Doctor</h1>
                     <p> One of the essential qualities of a professional doctor is his humanity.  At our clinic, <br /> we take a great care of your health, mental and physical.</p>
                 </div>
@@ -32,7 +32,7 @@ const Banner = () => {
                             <circle cx="28" cy="38" r="28" fill="#A5CCFF" />
                         </svg>
                     </div>
-                    <div>
+                    <div className='lg:hidden'>
                         <svg xmlns="http://www.w3.org/2000/svg" width="" height="700" viewBox="0 0 56 56" fill="none">
                             <circle cx="28" cy="58" r="28" fill="#A5CCFF" />
                         </svg>
