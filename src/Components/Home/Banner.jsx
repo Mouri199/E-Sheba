@@ -5,17 +5,17 @@ const Banner = () => {
         <div>
             <div className='lg:flex justify-around items-center bg-[#E1EEFF]'>
                 <div className='px-5 lg:px-0'>
-                    <h1 className="lg:text-6xl text-3xl font-bold">Find & Search Your <br />
-                        <span className="text-[#0360D9]">Favourite</span> Doctor</h1>
-                    <p> One of the essential qualities of a professional doctor is his humanity.  At our clinic, <br /> we take a great care of your health, mental and physical.</p>
+                    <h1 className="lg:text-6xl mb-3 text-3xl font-bold">Find & Search Your <br />
+                        <span className="text-[#0360D9]">Constituent</span> Medicine</h1>
+                    <p> MedCareHub is  one of the largest medical store that provides medicines on prescription & <br /> OTC. Order medicine online & get fastest delivery in your city.</p>
                 </div>
-                <div className='absolute py-4 lg:mt-[582px]  lg:px-[120px] flex px-3 mx-3 gap-10 bg-[#0360D9] text-white lg:w-full w-[400px]'>
+                <div className='absolute mt-6 py-4 lg:mt-[582px]  lg:px-[120px] flex px-3 mx-3 gap-10 bg-[#0360D9] text-white lg:w-[1600px]'>
                     <div>
-                        <h1 className='lg:text-6xl text-xl font-bold'>24/7 <span className='lg:mx-5'> | </span></h1>
+                        <h1 className='lg:text-6xl text-xl font-bold'>24/7 <span className='lg:mx-5 lg:block hidden'> | </span></h1>
                         <p>Online Support</p>
                     </div>
                     <div>
-                        <h1 className='lg:text-6xl text-xl font-bold'>100+ <span className='lg:mx-5'> | </span></h1>
+                        <h1 className='lg:text-6xl text-xl font-bold'>100+  <span className='lg:mx-5 lg:block hidden '> |</span></h1>
                         <p>Doctors</p>
                     </div>
 

@@ -9,6 +9,7 @@ import img from '/last-section-bg.jpg'
 
 
 const Home = () => {
+
     return (
         <div>
             <Banner></Banner>
@@ -20,9 +21,9 @@ const Home = () => {
                 <div className="hero-overlay bg-opacity-60"></div>
                 <div className="hero-content text-center text-neutral-content">
                     <div>
-                        <h1 className="mb-5 text-5xl font-bold">Buying medicines should be quick & easy!</h1>
+                        <h1 className="mb-5 lg:text-5xl text-3xl font-bold">Buying medicines should be quick & easy!</h1>
                         <p className="mb-5">Build an online pharmacy with IPharm</p>
-                        <button className="btn btn-primary">Nuy Medicine</button>
+                        <button className="btn btn-primary">Buy Medicine</button>
                     </div>
                 </div>
             </div>

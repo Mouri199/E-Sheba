@@ -4,13 +4,13 @@ import suppliment from '/Vector (2).svg'
 import mental from '/Vector (3).svg'
 export const Specialist =[
     {
-        "title":"Covid-19 Test",
-        "details":"Coronavirus disease (COVID-19) is an infectious disease caused by the SARS-CoV-2 virus.",
+        "title":"Pet Medicine",
+        "details":"Veterinary medicine is the branch of medicine that deals with the prevention and treatment of disease and injury in non-human animals.",
         "image":covid
     },
     {
-        "title":"Heart Lungs",
-        "details":"Pulmonary heart disease is a rare condition where the heart cannot pump enough blood to the body. ",
+        "title":"International Medicine",
+        "details":"Internal medicine is the medical specialty that focuses on the care of adult patients, and internal medicine physicians are specialists.",
         "image":lungs
     },
     {

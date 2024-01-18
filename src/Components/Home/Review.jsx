@@ -17,9 +17,9 @@ const Review = () => {
     })
     return (
         <div>
-            <h1 className=" text-center  mt-10 font-bold text-5xl">What <span className="text-[#0360F9]">Our Member's</span> Saying About Us</h1>
+            <h1 className=" text-center  mt-10 font-bold lg:text-5xl text-3xl mb-4">What <span className="text-[#0360F9]">Our Member's</span> Saying About Us</h1>
             <div ref={sliderRef} className="keen-slider">
-                <div className="flex mx-5 justify-around lg:px-48 pt-10 pb-10 bg-[#f8f9fd] ">
+                <div className="flex justify-around lg:px-48 pt-10 pb-10 bg-[#f8f9fd] ">
                     {
                         Reviews.map((review) => (
                             <div key={review.name}>
