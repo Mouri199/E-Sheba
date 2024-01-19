@@ -88,7 +88,7 @@ const NavBar = () => {
                                 </div>
                             </>
                             :
-                            <div className="flex lg:block hidden">
+                            <div className="lg:flex lg:static hidden gap-5 ">
                                 <Link to='/login' className="btn rounded-full lg:px-10 font-semibold lg:text-xl bg-[#E1EEFF] hover:bg-[#0360D9] text-[#0360D9] hover:text-white border-2 border-[#0360D9]">Log in</Link>
                                 <Link to='/register' className="btn rounded-full lg:px-10 font-semibold lg:text-xl bg-[#E1EEFF] hover:bg-[#0360D9] text-[#0360D9] hover:text-white border-2 border-[#0360D9]">Sign up</Link>
                             </div>
