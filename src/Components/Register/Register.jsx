@@ -115,6 +115,13 @@ const Register = () => {
                             <button className="btn bg-[#0360D9] text-white w-full">Sign up</button>
                         </form>
 
+                        {
+                            signError && <p className="mx-8 text-red-600">{signError}</p>
+                        }
+                        {
+                            signSuccess && <p className="mx-8 text-green-600">{signSuccess}</p>
+                        }
+
 
                         <div className="mt-6 flex flex-col space-y-2">
                             <a className="text-sm" href="#">

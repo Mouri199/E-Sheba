@@ -1,10 +1,20 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import logo from '/1.png'
+import UseAuth from "../Hook/UseAuth";
 
 
 
 const NavBar = () => {
+    const { user, logoutUser } = UseAuth()
 
+
+
+
+    const handleLogOut = () => {
+        logoutUser()
+            .then(() => console.log("You logged out successfully"))
+            .catch(error => console.error(error))
+    }
 
     return (
         <div>
@@ -34,10 +44,6 @@ const NavBar = () => {
                         <img className="lg:w-[200px] w-[150px]" src={logo} alt="" />
                     </a>
 
-                    {/* <div className="items-center space-x-2 flex-shrink-0 lg:hidden">
-                        <Link to='/login' className="btn rounded-full  font-semibold text-sm bg-[#E1EEFF] hover:bg-[#0360D9] text-[#0360D9] hover:text-white border-2 border-[#0360D9]">Log in</Link>
-                        <Link to='/register' className="btn rounded-full font-semibold text-sm bg-[#E1EEFF] hover:bg-[#0360D9] text-[#0360D9] hover:text-white border-2 border-[#0360D9]">Sign up</Link>
-                    </div> */}
                     <ul className="items-stretch hidden space-x-3 lg:flex">
                         <li className="flex">
                             <a rel="noopener noreferrer" href="#" className="flex items-center px-4 -mb-1 text-xl hover:text-[#0360D9] hover:underline">Home</a>
@@ -48,13 +54,31 @@ const NavBar = () => {
                         <li className="flex">
                             <a rel="noopener noreferrer" href="#" className="flex items-center px-4 -mb-1 text-xl hover:text-[#0360D9] hover:underline ">Doctor's</a>
                         </li>
-                       
-                      
+
+
 
                     </ul>
                     <div className="items-center gap-5 flex-shrink-0 hidden lg:flex">
-                        <Link to='/login' className="btn rounded-full lg:px-10 font-semibold lg:text-xl bg-[#E1EEFF] hover:bg-[#0360D9] text-[#0360D9] hover:text-white border-2 border-[#0360D9]">Log in</Link>
-                        <Link to='/register' className="btn rounded-full lg:px-10 font-semibold lg:text-xl bg-[#E1EEFF] hover:bg-[#0360D9] text-[#0360D9] hover:text-white border-2 border-[#0360D9]">Sign up</Link>
+                        {user ?
+                            <>
+                                <div className="flex gap-5 items-center">
+                                    <img className="rounded-full w-7 lg:w-14" src={user.photoURL}
+                                        alt="" />
+                                    <p className="lg:text-2xl lg:block hidden font-medium" >
+                                        <span>{user.displayName}</span>
+                                    </p>
+                                    <li className="lg:p-2 p-1 mr-2 lg:text-xl text-sm rounded-lg bg-red text-white hover:bg-hoverclr bg-redclr lg:block">
+                                        <NavLink className="btn rounded-full lg:px-10 font-semibold lg:text-xl bg-[#E1EEFF] hover:bg-[#0360D9] text-[#0360D9] hover:text-white border-2 border-[#0360D9]" onClick={handleLogOut}> Log Out</NavLink>
+                                    </li>
+                                </div>
+                            </>
+                            :
+                            <div className="flex">
+                                <Link to='/login' className="btn rounded-full lg:px-10 font-semibold lg:text-xl bg-[#E1EEFF] hover:bg-[#0360D9] text-[#0360D9] hover:text-white border-2 border-[#0360D9]">Log in</Link>
+                                <Link to='/register' className="btn rounded-full lg:px-10 font-semibold lg:text-xl bg-[#E1EEFF] hover:bg-[#0360D9] text-[#0360D9] hover:text-white border-2 border-[#0360D9]">Sign up</Link>
+                            </div>
+                        }
+
                     </div>
 
                 </div>
@@ -62,7 +86,7 @@ const NavBar = () => {
 
             </header>
 
-      
+
         </div>
     );
 };

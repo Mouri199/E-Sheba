@@ -1,7 +1,15 @@
 import Lottie from 'lottie-react';
 import loginAnimation from './login.json'
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+import UseAuth from '../Hook/UseAuth';
+import { useState } from 'react';
+import Swal from 'sweetalert2';
 const Login = () => {
+
+    const { loginUser, signInWithGoogle } = UseAuth()
+    const [signError, setSignError] = useState();
+    const [signSuccess, setSignSuccess] = useState();
+    const registerNavi = useNavigate()
 
     const handleLogin = e => {
         e.preventDefault();
@@ -9,6 +17,44 @@ const Login = () => {
         const email = form.email.value;
         const password = form.password.value;
         console.log(email, password);
+
+        setSignError(" ");
+        setSignSuccess(" ");
+
+        if (password.length < 6) {
+            setSignError(" Password should be at least 6 characters ")
+            return;
+        } else if (!/[A-Z]/.test(password)) {
+            setSignError('you should use one uppercase character.')
+            return;
+        } else if (!/[!@#$%^&*]/.test(password))
+            setSignError('you should a special character')
+
+        loginUser(email, password)
+            .then(result => {
+
+                console.log(result);
+
+                setSignSuccess("User Created successfully!")
+                e.target.reset()
+                registerNavi("/");
+                Swal.fire({
+                    icon: "success",
+                    title: "Sign In Successful",
+                    text: "You have successfully signed in!",
+                });
+
+            })
+            .catch(error => {
+                console.error(error);
+                setSignError(error.message);
+                Swal.fire({
+                    icon: "error",
+                    title: "Sign In Failed",
+                    text: "An error occurred during sign in. Please try again.",
+                });
+
+            })
     }
 
     return (
@@ -41,6 +87,13 @@ const Login = () => {
                             </div>
                             <button className="btn bg-[#0360D9] text-white w-full">Log in</button>
                         </form>
+
+                        {
+                            signError && <p className="mx-8 text-red-600">{signError}</p>
+                        }
+                        {
+                            signSuccess && <p className="mx-8 text-green-600">{signSuccess}</p>
+                        }
 
 
                         <div className="mt-6 flex flex-col space-y-2">
