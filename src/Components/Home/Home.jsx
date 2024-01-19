@@ -17,7 +17,7 @@ const Home = () => {
         <div>
             <Banner></Banner>
             <SpecialistCard></SpecialistCard>
-            <div className="lg:flex justify-around mx-5 lg:mx-10 my-20">
+            <div className="lg:flex justify-around max-w-[1600px] mx-auto my-20 ml-28 lg:ml-0">
                {
                 MedicineData?.map((data)=>(
                     <div key={data.ID}>
