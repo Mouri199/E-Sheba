@@ -134,7 +134,7 @@ const Login = () => {
 
                         <div className="mt-6 flex flex-col space-y-2">
                             <a className="text-sm" href="#">
-                                Don't have an account?<Link to='/registerr'> Register here</Link>
+                                Don't have an account?<Link to='/register'> Register here</Link>
                             </a>
                         </div>
                         <p className="mt-6 text-xs text-gray-600">

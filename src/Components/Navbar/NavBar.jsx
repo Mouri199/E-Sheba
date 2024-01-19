@@ -51,9 +51,9 @@ const NavBar = () => {
 
 
                     <ul className="items-stretch hidden space-x-3 lg:flex">
-                        <li className="flex">
+                        <Link to='/' className="flex">
                             <a rel="noopener noreferrer" href="#" className="flex items-center px-4 -mb-1 text-xl hover:text-[#0360D9] hover:underline">Home</a>
-                        </li>
+                        </Link>
                         <li className="flex">
                             <a rel="noopener noreferrer" href="#" className="flex items-center px-4 -mb-1 text-xl hover:text-[#0360D9] hover:underline">About Us</a>
                         </li>
