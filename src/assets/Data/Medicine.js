@@ -1,302 +1,336 @@
+import babyCare from '/mom&bbyCare.webp';
+import herbal from '/herbalcare.webp';
+import womenCare from '/womencare.webp';
+import covid from '/covid.webp';
+import suppliment from '/suppliment.webp';
+import nutrition from '/Nutration.webp';
+import personal from '/personalCare.webp'
+
 export const MedicineData = [
-    {
-      "ID": 1,
-      "medName": "Aspirin",
-      "img": "https://i.ibb.co/YdrNNR2/i-Stock-458563393.jpg",
-      "Category": "Pain Relief",
-      "price": 5.99,
-      "ComName": "PharmaCorp",
-      "PublishDate": "2022-01-01",
-      "Des": "Effective for mild to moderate pain relief."
-    },
-    {
-      "ID": 2,
-      "medName": "Ibuprofen",
-      "img": "https://i.ibb.co/gDSp2Fg/GUEST-ed5349ff-fa70-4af9-ac28-d73d8dcbe9ef.jpg",
-      "Category": "Pain Relief",
-      "price": 7.49,
-      "ComName": "HeadEase",
-      "PublishDate": "2022-02-05",
-      "Des": "NonsteroIDal anti-inflammatory drug (NSAID) for pain and inflammation."
-    },
-    {
-      "ID": 3,
-      "medName": "Paracetamol",
-      "img": "https://i.ibb.co/4mgMBH3/3634764592.jpg",
-      "Category": "healthCare",
-      "price": 4.99,
-      "ComName": "HeadEase",
-      "PublishDate": "2022-03-10",
-      "Des": "Commonly used to reduce fever and relieve pain."
-    },
-    {
-      "ID": 4,
-      "medName": "Antihistamine",
-      "img": "https://i.ibb.co/Pxssyzy/generic-image-of-antihistamine-tablets-used-in-allergy-relief-chlorphenamine-BWH0-RJ.jpg",
-      "Category": "Allergy",
-      "price": 12.99,
-      "ComName": "PharmaCorp",
-      "PublishDate": "2022-04-15",
-      "Des": "ProvIDes relief from allergy symptoms such as sneezing and itching."
-    },
-    {
-      "ID": 5,
-      "medName": "Omega-3 Capsules",
-      "img": "https://i.ibb.co/pv2m3GB/Omaga-Mock-FInal-44.jpg",
-      "Category": "Supplements",
-      "price": 19.99,
-      "ComName": "HeadEase",
-      "PublishDate": "2022-05-20",
-      "Des": "Supports heart health and provIDes essential fatty acIDs."
-    },
-    {
-      "ID": 6,
-      "medName": "Vitamin C Tablets",
-      "img": "https://i.ibb.co/CvVF7Lj/VITAMIN-C.jpg",
-      "Category": "Supplements",
-      "price": 8.49,
-      "ComName": "HeadEase",
-      "PublishDate": "2022-06-25",
-      "Des": "Boosts immune system function and helps prevent illnesses."
-    },
-    {
-      "ID": 7,
-      "medName": "Allergy Nasal Spray",
-      "img": "https://i.ibb.co/QHnD6kJ/450.jpg",
-      "Category": "Allergy",
-      "price": 15.75,
-      "ComName": "HeadEase",
-      "PublishDate": "2022-07-10",
-      "Des": "Relieves nasal congestion and allergy symptoms."
-    },
-    {
-      "ID": 8,
-      "medName": "Muscle Relaxant",
-      "img": "https://i.ibb.co/fMBLMPY/en-mot-platinum-40s-ff-e-s-1.jpg",
-      "Category": "Pain Relief",
-      "price": 9.99,
-      "ComName": "PharmaCorp",
-      "PublishDate": "2022-08-15",
-      "Des": "Eases muscle tension and promotes relaxation."
-    },
-    {
-      "ID": 9,
-      "medName": "Acne Cream",
-      "img": "https://i.ibb.co/VMv38DR/download.jpg",
-      "Category": "Allergy",
-      "price": 14.50,
-      "ComName": "VitaJoy",
-      "PublishDate": "2022-09-20",
-      "Des": "Reduces acne and promotes clear skin."
-    },
-    {
-      "ID": 10,
-      "medName": "Dietary Fiber Supplement",
-      "img": "https://i.ibb.co/hMTRktr/71-Obj0-EFL-AC-UL600-SR600-600.jpg",
-      "Category": "Digestive",
-      "price": 11.25,
-      "ComName": "PharmaCorp",
-      "PublishDate": "2022-10-25",
-      "Des": "Supports digestive system health and regular bowel movements."
-    },
-    {
-      "ID": 11,
-      "medName": "Migraine Relief",
-      "img": "https://i.ibb.co/qmBds2c/migraine-relief-tablets-BHI-main-1.jpg",
-      "Category": "healthCare",
-      "price": 16.99,
-      "ComName": "HeartGuard",
-      "PublishDate": "2022-11-01",
-      "Des": "ProvIDes relief from migraine headaches."
-    },
-    {
-      "ID": 12,
-      "medName": "Calcium Tablets",
-      "img": "https://i.ibb.co/qmvvgY4/71q-C9-Q62-G3-L-AC-UF1000-1000-QL80.jpg",
-      "Category": "Digestive",
-      "price": 13.75,
-      "ComName": "PharmaCorp",
-      "PublishDate": "2022-12-06",
-      "Des": "Supports strong and healthy bones."
-    },
-    {
-      "ID": 13,
-      "medName": "Multivitamin Gummies",
-      "img": "https://i.ibb.co/bPVF5Yw/719-JK53-EMCL-AC-UF1000-1000-QL80.jpg",
-      "Category": "Digestive",
-      "price": 18.50,
-      "ComName": "Suppliment",
-      "PublishDate": "2023-01-10",
-      "Des": "Delicious gummies with essential vitamins and minerals."
-    },
-    {
-      "ID": 14,
-      "medName": "Anti-Anxiety Medication",
-      "img": "https://i.ibb.co/Jzb1Lx1/intro-1614804971.jpg",
-      "Category": "healthManagement",
-      "price": 22.99,
-      "ComName": "VitaJoy",
-      "PublishDate": "2023-02-15",
-      "Des": "Helps alleviate symptoms of anxiety and stress."
-    },
-    {
-      "ID": 15,
-      "medName": "Weight Loss Pills",
-      "img": "https://i.ibb.co/zJX95Kf/2a8145313abcf872f3f15328ac9d6d00.jpg",
-      "Category": "healthManagement",
-      "price": 29.99,
-      "ComName": "VitaJoy",
-      "PublishDate": "2023-03-22",
-      "Des": "Supports healthy weight loss and metabolism."
-    },
-    {
-      "ID": 16,
-      "medName": "Hair Growth Serum",
-      "img": "https://i.ibb.co/vv8BjH4/download-1.jpg",
-      "Category": "Skincare",
-      "price": 17.95,
-      "ComName": "HeartGuard",
-      "PublishDate": "2023-04-27",
-      "Des": "Promotes hair growth and reduces hair loss."
-    },
-    {
-      "ID": 17,
-      "medName": "Strength-20mg10s",
-      "img": "https://i.ibb.co/k0CnbZw/Stomach-Ache-Pain-Relief-Double-Strength-20mg10s-9350299002010-3-D-Perspective-Shifted-Top-Front-405.jpg",
-      "Category": "Pain Relief",
-      "price": 8.99,
-      "ComName": "HeartGuard",
-      "PublishDate": "2023-05-10",
-      "Des": "Relieves common stomach pain and discomfort."
-    },
-    {
-      "ID": 18,
-      "medName": "Opticrome",
-      "img": "https://i.ibb.co/n68g9xX/56558457-ec79-4c73-ad87-bf6f5e9d65a8-1966040934.jpg",
-      "Category": "Eye Care",
-      "price": 6.75,
-      "ComName": "AcIDRelief",
-      "PublishDate": "2023-06-15",
-      "Des": "Refreshes and soothes dry or irritated eyes."
-    },
-    {
-      "ID": 19,
-      "medName": "Joint Flex",
-      "img": "https://i.ibb.co/ncbKZf0/Joint-flex-114g-62497.jpg",
-      "Category": "Pain Relief",
-      "price": 14.99,
-      "ComName": "AcIDRelief",
-      "PublishDate": "2023-07-20",
-      "Des": "Eases joint pain and improves flexibility."
-    },
-    {
-      "ID": 20,
-      "medName": "Visine",
-      "img": "https://i.ibb.co/Qp58Mwq/00074300926483-vis-allergy-multi-single-obwb.jpg",
-      "Category": "Allergy",
-      "price": 10.50,
-      "ComName": "AcIDRelief",
-      "PublishDate": "2023-08-25",
-      "Des": "Relieves allergy symptoms affecting the eyes."
-    },
-    {
-      "ID": 21,
-      "medName": "Prenatal Vitamins",
-      "img": "https://i.ibb.co/MDhDPqg/wh-prenatalvitamins-1642545042.png",
-      "Category": "healthManagement",
-      "price": 24.99,
-      "ComName": "AcIDRelief",
-      "PublishDate": "2023-09-01",
-      "Des": "Supports the health of pregnant women and their developing babies."
-    },
-    {
-      "ID": 22,
-      "medName": "AntacID Tablets",
-      "img": "https://i.ibb.co/m9QXfch/dynacid-tablets.jpg",
-      "Category": "Digestive",
-      "price": 7.99,
-      "ComName": "AcIDRelief",
-      "PublishDate": "2023-10-06",
-      "Des": "Relieves heartburn and indigestion."
-    },
-    {
-      "ID": 23,
-      "medName": "Insect Repellent Spray",
-      "img": "https://i.ibb.co/sgsvCxq/fbd2140f8def236472c2b6b3aea38e83.jpg",
-      "Category": "Skincare",
-      "price": 11.99,
-      "ComName": "SunSafe",
-      "PublishDate": "2023-11-10",
-      "Des": "Repels mosquitoes and other insects for outdoor activities."
-    },
-    {
-      "ID": 24,
-      "medName": "Canies Pro",
-      "img": "https://i.ibb.co/7y4chp9/50-Image-5.jpg",
-      "Category": "Allergy",
-      "price": 13.25,
-      "ComName": "SunSafe",
-      "PublishDate": "2023-12-15",
-      "Des": "Treats and prevents fungal infections in nails."
-    },
-    {
-      "ID": 25,
-      "medName": "Sunscreen Lotion",
-      "img": "https://i.ibb.co/ScLykbq/2901200183.jpg",
-      "Category": "Skincare",
-      "price": 9.50,
-      "ComName": "SunSafe",
-      "PublishDate": "2024-01-20",
-      "Des": "Protects the skin from harmful UV rays."
-    },
-    {
-      "ID": 26,
-      "medName": "Colon Cleanser",
-      "img": "https://i.ibb.co/JxntRPK/1543-90-AFRONT.jpg",
-      "Category": "Skincare",
-      "price": 16.49,
-      "ComName": "SunSafe",
-      "PublishDate": "2024-02-25",
-      "Des": "Supports colon health and promotes regular bowel movements."
-    },
-    {
-      "ID": 27,
-      "medName": "Mouthwash",
-      "img": "https://i.ibb.co/Jzw5Nzm/lis-us-gum-therapy.jpg",
-      "Category": "healthCare",
-      "price": 5.75,
-      "ComName": "SunSafe",
-      "PublishDate": "2024-03-01",
-      "Des": "Freshens breath and kills germs for oral hygiene."
-    },
-    {
-      "ID": 28,
-      "medName": "Statin",
-      "img": "https://i.ibb.co/H2PbS3s/Statin-drugs.jpg",
-      "Category": "healthManagement",
-      "price": 23.99,
-      "ComName": "HeartGuard",
-      "PublishDate": "2024-04-05",
-      "Des": "Helps lower cholesterol levels for heart health."
-    },
-    {
-      "ID": 29,
-      "medName": "Sanitize-50ml-mockup",
-      "img": "https://i.ibb.co/Zd018DZ/Sanitize-50ml-mockup-500px.jpg",
-      "Category": "healthManagement",
-      "price": 6.99,
-      "ComName": "HeartGuard",
-      "PublishDate": "2024-05-10",
-      "Des": "Kills germs and bacteria for on-the-go hand hygiene."
-    },
-    {
-      "ID": 30,
-      "medName": "Alpha Brain",
-      "img": "https://i.ibb.co/rQRH1Rn/1696001903-81-Cade-AGlg-L.jpg",
-      "Category": "healthCare",
-      "price": 20.50,
-      "ComName": "HeartGuard",
-      "PublishDate": "2024-06-15",
-      "Des": "Supports cognitive function and memory enhancement."
-    }
-  ]
+  {
+    "ID": 1,
+    "Medname": "Echinacea Extract",
+    "Image": "https://i.ibb.co/6JZMKrD/71m5-N6h-4-JL-AC-UF1000-1000-QL80.jpg",
+    "Price": 19.99,
+    "Category": "Herbal Care",
+    "CategoryImage":herbal,
+    "Company": "GreenBotanicals",
+    "Description": "Echinacea extract is known for its immune-boosting properties. It supports the body's natural defense mechanisms and helps maintain overall well-being."
+  },
+  {
+    "ID": 2,
+    "Medname": "Turmeric Capsules",
+    "Image": "https://i.ibb.co/8NKrrSt/download-5.jpg",
+    "Price": 24.99,
+    "Category": "Herbal Care",
+    "Company": "NatureWellness",
+    "Description": "Turmeric capsules contain curcumin, a powerful anti-inflammatory and antioxidant compound. They may help reduce inflammation and support joint health."
+  },
+  {
+    "ID": 3,
+    "Medname": "Ginger Tea",
+    "Image": "https://i.ibb.co/1qvg3yG/images-2.jpg",
+    "Price": 9.99,
+    "Category": "Herbal Care",
+    "Company": "HarmonyHerbs",
+    "Description": "Ginger tea is known for its digestive benefits and soothing properties. It can help alleviate nausea and support a healthy digestive system."
+  },
+  {
+    "ID": 4,
+    "Medname": "Peppermint Oil",
+    "Image": "https://i.ibb.co/bRqBTFh/download-6.jpg",
+    "Price": 14.99,
+    "Category": "Herbal Care",
+    "Company": "EssentialWell",
+    "Description": "Peppermint oil is often used for its refreshing aroma and potential benefits for respiratory health. It can also be applied topically for a cooling sensation."
+  },
+  {
+    "ID": 5,
+    "Medname": "Chamomile Tincture",
+    "Image": "https://i.ibb.co/dLb6FBG/81o7yk-RMILL-AC-UF1000-1000-QL80.jpg",
+    "Price": 29.99,
+    "Category": "Herbal Care",
+    "Company": "NaturalHarvest",
+    "Description": "Chamomile tincture is known for its calming and relaxing properties. It may help promote better sleep and ease tension and anxiety."
+  },
+
+  {
+    "ID": 6,
+    "Medname": "Folate Supplement",
+    "Image": "https://i.ibb.co/5YY3WvM/istockphoto-494066462-612x612.jpg",
+    "Price": 15.99,
+    "Category": "Women's Care",
+    "CategoryImage": womenCare,
+    "Company": "VitalWoman",
+    "Description": "Folate supplements are essential for women's health, especially during pregnancy. They support fetal development and help prevent neural tube defects."
+  }
+  ,
+  {
+    "ID": 7,
+    "Medname": "Calcium and Vitamin D Tablets",
+    "Image": "https://i.ibb.co/FKbsFs0/1635914221-135289-0.jpg",
+    "Price": 17.99,
+    "Category": "Women's Care",
+    "Company": "HealthHarmony",
+    "Description": "These tablets provide a combination of calcium and vitamin D, crucial for maintaining strong bones and preventing osteoporosis in women, especially post-menopause."
+  },
+  {
+    "ID": 8,
+    "Medname": "Iron and B12 Complex",
+    "Image": "https://i.ibb.co/Jn2FSSj/61n-W4j6-Enr-L-AC-UF894-1000-QL80.jpg",
+    "Price": 12.99,
+    "Category": "Women's Care",
+    "Company": "FemWellness",
+    "Description": "Iron and B12 complex supplements are designed to address iron deficiency anemia, a common concern for women, supporting energy levels and overall well-being."
+  },
+  {
+    "ID": 9,
+    "Medname": "Hormone Balancing Tea",
+    "Image": "https://i.ibb.co/vHQ0PzY/artemis-hormone-balance-tea-60551.jpg",
+    "Price": 9.99,
+    "Category": "Women's Care",
+    "Company": "HerbalHarbor",
+    "Description": "This herbal tea is formulated to support hormone balance in women. It includes ingredients known for their potential benefits in regulating hormonal fluctuations."
+  },
+  {
+    "ID": 10,
+    "Medname": "Cranberry Capsules",
+    "Image": "https://i.ibb.co/nPXPr06/bottles-with-cranberry-pills-and-capsules-on-white-background-2-H5-MP9-K.jpg",
+    "Price": 14.99,
+    "Category": "Women's Care",
+    "Company": "WomenWell",
+    "Description": "Cranberry capsules are often used to promote urinary tract health in women. They may help prevent urinary tract infections and support overall bladder function."
+  },
+  {
+    "ID": 11,
+    "Medname": "Antiviral Tablets",
+    "Image": "https://i.ibb.co/mCq7VfC/images-3.jpg",
+    "Price": 29.99,
+    "Category": "COVID Special",
+    "CategoryImage":covid,
+    "Company": "PandemicGuard",
+    "Description": "Antiviral tablets designed to target specific mechanisms of viral replication, potentially aiding in the treatment of COVID-19 and other viral infections."
+  },
+  {
+    "ID": 12,
+    "Medname": "Immune Booster Syrup",
+    "Image": "https://i.ibb.co/mSw9kYz/91x-B74r-UD1-L.jpg",
+    "Price": 24.99,
+    "Category": "COVID Special",
+    "Company": "ShieldHealth",
+    "Description": "This syrup is formulated with immune-boosting ingredients to support the body's defenses during viral outbreaks, including COVID-19."
+  },
+  {
+    "ID": 13,
+    "Medname": "Respiratory Support Inhaler",
+    "Image": "https://i.ibb.co/wwFp41y/inhaler-818056-5100.jpg",
+    "Price": 19.99,
+    "Category": "COVID Special",
+    "Company": "BreatheEasy",
+    "Description": "Inhaler designed to provide respiratory support during COVID-19 infections, helping ease breathing difficulties and promoting lung health."
+  },
+  {
+    "ID": 14,
+    "Medname": "Anti-Inflammatory Capsules",
+    "Image": "https://i.ibb.co/GFx5Spw/71-MLs-MXqo-SL.jpg",
+    "Price": 34.99,
+    "Category": "COVID Special",
+    "Company": "InflameGuard",
+    "Description": "Capsules containing anti-inflammatory compounds to help manage inflammation associated with COVID-19 and reduce the risk of severe symptoms."
+  },
+  {
+    "ID": 15,
+    "Medname": "Thermometer - Smart Health Monitor",
+    "Image": "https://i.ibb.co/PGKtxZp/71-F0-I-M1a-OL-SL1500.jpg",
+    "Price": 39.99,
+    "Category": "COVID Special",
+    "Company": "HealthTech Solutions",
+    "Description": "A smart thermometer for monitoring body temperature, an important tool in early detection and management of COVID-19 symptoms."
+  },
+  {
+    "ID": 16,
+    "Medname": "Prenatal Multivitamin",
+    "Image": "https://i.ibb.co/xzB7p1s/1200px-Prenatal-vitamin-tablets.jpg",
+    "Price": 22.99,
+    "Category": "Baby and Mom Care",
+    "Company": "MommyWell",
+    "Description": "A comprehensive prenatal multivitamin to support the health of expecting mothers and provide essential nutrients for the development of the baby."
+  },
+  {
+    "ID": 17,
+    "Medname": "Baby Diaper Rash Cream",
+    "Image": "https://i.ibb.co/Np6ts1p/2100693-himalaya-diaper-rash-cream-20g.jpg",
+    "Price": 8.99,
+    "Category": "Baby and Mom Care",
+    "CategoryImage": babyCare,
+    "Company": "TinyCare",
+    "Description": "A gentle diaper rash cream formulated to soothe and protect the delicate skin of babies, preventing and relieving discomfort from diaper rashes."
+  },
+  {
+    "ID": 18,
+    "Medname": "Postpartum Recovery Tea",
+    "Image": "https://i.ibb.co/hC8N87P/download-7.jpg",
+    "Price": 12.99,
+    "Category": "Baby and Mom Care",
+    "Company": "NurturingHerbs",
+    "Description": "A special blend of herbs designed to support postpartum recovery in new mothers, promoting healing and overall well-being."
+  },
+  {
+    "ID": 19,
+    "Medname": "Infant Gas Relief Drops",
+    "Image": "https://i.ibb.co/vZKnw8H/download-8.jpg",
+    "Price": 9.99,
+    "Category": "Baby and Mom Care",
+    "Company": "GentleCare",
+    "Description": "Gentle drops to relieve gas and colic discomfort in infants, providing relief for both the baby and the parents during fussy times."
+  },
+  {
+    "ID": 20,
+    "Medname": "Nursing Support Supplements",
+    "Image": "https://i.ibb.co/7gxx7b7/61-MLj5-P3yq-L.jpg",
+    "Price": 16.99,
+    "Category": "Baby and Mom Care",
+    "Company": "LactoLove",
+    "Description": "Supplements to support breastfeeding mothers, promoting lactation and ensuring they receive the necessary nutrients for themselves and their babies."
+  }
+  ,
+  {
+    "ID": 21,
+    "Medname": "Vitamin C Tablets",
+    "Image": "https://i.ibb.co/HhZDR39/download-9.jpg",
+    "Price": 12.99,
+    "Category": "Supplements",
+    "CategoryImage":suppliment,
+    "Company": "WellnessEssentials",
+    "Description": "Vitamin C tablets known for their immune-boosting properties, helping to support overall health and protect against infections."
+  },
+  {
+    "ID": 22,
+    "Medname": "Omega-3 Fish Oil Capsules",
+    "Image": "https://i.ibb.co/pxLxdrP/fish-oil-omega-3-capsules-Getty-Images-1430921498-3000x2000.jpg",
+    "Price": 18.99,
+    "Category": "Supplements",
+    "Company": "HeartHealth",
+    "Description": "Omega-3 fish oil capsules rich in essential fatty acids that promote cardiovascular health, brain function, and joint flexibility."
+  },
+  {
+    "ID": 23,
+    "Medname": "Probiotic Blend",
+    "Image": "https://i.ibb.co/t3t2FYn/pn-probiotic-blend-500x500.jpg",
+    "Price": 24.99,
+    "Category": "Supplements",
+    "Company": "GutBalance",
+    "Description": "A probiotic blend to support a healthy gut microbiome, aiding digestion, and promoting a balanced immune system."
+  },
+  {
+    "ID": 24,
+    "Medname": "Calcium and Magnesium Supplement",
+    "Image": "https://i.ibb.co/0rWY6tK/cmzv-1445x.jpg",
+    "Price": 15.99,
+    "Category": "Supplements",
+    "Company": "BoneHealth",
+    "Description": "A supplement combining calcium and magnesium for bone health, supporting strong bones and overall musculoskeletal well-being."
+  },
+  {
+    "ID": 25,
+    "Medname": "Energy Boosting Ginseng Capsules",
+    "Image": "https://i.ibb.co/jbczD6b/download-10.jpg",
+    "Price": 21.99,
+    "Category": "Supplements",
+    "Company": "VitalityBoost",
+    "Description": "Ginseng capsules formulated to provide a natural energy boost, supporting vitality and combating fatigue."
+  },
+  {
+    "ID": 26,
+    "Medname": "Complete Meal Replacement Shake",
+    "Image": "https://i.ibb.co/8crrLNy/d8d01bcc79af707a311d0568b4e02d98.jpg",
+    "Price": 29.99,
+    "Category": "Nutrition",
+    "CategoryImage": nutrition,
+    "Company": "NutriBlend",
+    "Description": "A nutritious meal replacement shake designed to provide essential vitamins, minerals, and protein for a balanced and convenient dietary option."
+  },
+  {
+    "ID": 27,
+    "Medname": "Vegetarian Protein Powder",
+    "Image": "https://i.ibb.co/Pm2S10Z/658d6e5ce2bea67f485a51ee-orgain-organic-vegan-protein-powder.jpg",
+    "Price": 24.99,
+    "Category": "Nutrition",
+    "Company": "GreenProteins",
+    "Description": "A plant-based protein powder enriched with amino acids, suitable for vegetarians and those looking to support muscle growth and repair."
+  },
+  {
+    "ID": 28,
+    "Medname": "Fiber and Prebiotic Capsules",
+    "Image": "https://i.ibb.co/SySPPTZ/images-4.jpg",
+    "Price": 18.99,
+    "Category": "Nutrition",
+    "Company": "GutHealthPlus",
+    "Description": "Capsules containing a blend of fiber and prebiotics to support digestive health, promote gut flora balance, and enhance nutrient absorption."
+  },
+  {
+    "ID": 29,
+    "Medname": "Liquid Vitamin D3 Drops",
+    "Image": "https://i.ibb.co/MD5V3zx/download-12.jpg",
+    "Price": 14.99,
+    "Category": "Nutrition",
+    "Company": "SunshineNutrients",
+    "Description": "Liquid vitamin D3 drops for maintaining bone health, supporting immune function, and ensuring optimal vitamin D levels, especially in deficient conditions."
+  },
+  {
+    "ID": 30,
+    "Medname": "Antioxidant-Rich Berry Extract",
+    "Image": "https://i.ibb.co/n13GCWc/image-1024.jpg",
+    "Price": 19.99,
+    "Category": "Nutrition",
+    "Company": "BerryVitality",
+    "Description": "A concentrated berry extract supplement packed with antioxidants to promote overall health and protect against oxidative stress."
+  }
+  , {
+    "ID": 31,
+    "Medname": "Antibacterial Hand Sanitizer",
+    "Image": "https://i.ibb.co/x6BK2r4/9652-12-jpg-650.jpg",
+    "Price": 7.99,
+    "Category": "Personal Care",
+    "CategoryImage":personal,
+    "Company": "CleanHands",
+    "Description": "An effective antibacterial hand sanitizer to keep hands clean and protect against germs, viruses, and bacteria while on the go."
+  },
+  {
+    "ID": 32,
+    "Medname": "Dandruff Control Shampoo",
+    "Image": "https://i.ibb.co/mzWDpCX/head-shoulders-anti-dandruff-lemon-fresh-shampoo-330ml.jpg",
+    "Price": 12.99,
+    "Category": "Personal Care",
+    "Company": "ScalpCare",
+    "Description": "A specialized shampoo for dandruff control, formulated to soothe the scalp, reduce flakes, and promote healthy hair and scalp."
+  },
+  {
+    "ID": 33,
+    "Medname": "Tea Tree Oil Acne Gel",
+    "Image": "https://i.ibb.co/NNJ0wGy/41-X8suo-FTj-L.jpg",
+    "Price": 9.99,
+    "Category": "Personal Care",
+    "Company": "ClearSkin",
+    "Description": "An acne gel enriched with tea tree oil to target and reduce acne, blemishes, and inflammation, promoting clear and healthy skin."
+  },
+  {
+    "ID": 34,
+    "Medname": "Sensitive Skin Moisturizer",
+    "Image": "https://i.ibb.co/HKnS3fX/pump-tc22o-front.jpg",
+    "Price": 15.99,
+    "Category": "Personal Care",
+    "Company": "GentleGlow",
+    "Description": "A gentle moisturizer specially designed for sensitive skin, providing hydration without irritation and promoting a soft and supple complexion."
+  },
+  {
+    "ID": 35,
+    "Medname": "Deodorant Wipes",
+    "Image": "https://i.ibb.co/Q70bFjL/612-r-WP4-Zx-L.jpg",
+    "Price": 6.99,
+    "Category": "Personal Care",
+    "Company": "FreshFeel",
+    "Description": "Convenient deodorant wipes for a quick and refreshing way to stay odor-free and feel clean throughout the day."
+  }
+
+]

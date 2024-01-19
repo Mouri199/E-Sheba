@@ -11,19 +11,21 @@ import img from '/last-section-bg.jpg'
 
 const Home = () => {
 
-    const uniqueCategories = Array.from(new Set(MedicineData.map(item => item.Category)));
+    // const uniqueCategories = Array.from(new Set(MedicineData.map(item => item.Category)));
 
     return (
         <div>
             <Banner></Banner>
             <SpecialistCard></SpecialistCard>
-            <div className="categories-list">
-                <h2>Categories:</h2>
-                <ul>
-                    {uniqueCategories.map(category => (
-                        <li key={category}>{category}</li>
-                    ))}
-                </ul>
+            <div className="lg:flex justify-around mx-5 lg:mx-10 my-20">
+               {
+                MedicineData?.map((data)=>(
+                    <div key={data.ID}>
+                        <img src={data.CategoryImage} alt="" />
+
+                    </div>
+                ))
+               }
             </div>
             <DoctorSpecialist></DoctorSpecialist>
             <ChooseUs></ChooseUs>
