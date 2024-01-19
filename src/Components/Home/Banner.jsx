@@ -7,15 +7,16 @@ const Banner = () => {
                 <div className='px-5 lg:px-0'>
                     <h1 className="lg:text-6xl mb-3 text-3xl font-bold">Find & Search Your <br />
                         <span className="text-[#0360D9]">Constituent</span> Medicine</h1>
-                    <p> MedCareHub is  one of the largest medical store that provides medicines on prescription & <br /> OTC. Order medicine online & get fastest delivery in your city.</p>
+                    <p className='mb-5'> MedCareHub is  one of the largest medical store that provides medicines on prescription & <br /> OTC. Order medicine online & get fastest delivery in your city.</p>
+                    <button className="btn bg-[#0360D9] text-white">Contact Us</button>
                 </div>
                 <div className='absolute mt-6 py-4 lg:mt-[582px]  lg:px-[120px] flex px-3 mx-3 gap-10 bg-[#0360D9] text-white lg:w-[1600px]'>
                     <div>
-                        <h1 className='lg:text-6xl text-xl font-bold'>24/7 <span className='lg:mx-5 lg:block hidden'> | </span></h1>
+                        <h1 className='lg:text-6xl text-xl font-bold'>24/7 </h1>
                         <p>Online Support</p>
                     </div>
                     <div>
-                        <h1 className='lg:text-6xl text-xl font-bold'>100+  <span className='lg:mx-5 lg:block hidden '> |</span></h1>
+                        <h1 className='lg:text-6xl text-xl font-bold'>100+ </h1>
                         <p>Doctors</p>
                     </div>
 

@@ -48,9 +48,7 @@ const NavBar = () => {
                         <li className="flex">
                             <a rel="noopener noreferrer" href="#" className="flex items-center px-4 -mb-1 text-xl hover:text-[#0360D9] hover:underline ">Doctor's</a>
                         </li>
-                        <li className="flex">
-                            <a rel="noopener noreferrer" href="#" className="flex items-center px-4 -mb-1 text-xl hover:text-[#0360D9] hover:underline ">Contact Us</a>
-                        </li>
+                       
                       
 
                     </ul>

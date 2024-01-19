@@ -6,13 +6,16 @@ import {
 
 import './index.css'
 import { router } from './Router/Route';
+import AuthContributor from './Components/AuthContributor/AuthContributor';
 
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <div className='max-w-[1600px] mx-auto'>
-    <React.StrictMode >
-      <RouterProvider router={router} />
-    </React.StrictMode>
+    <AuthContributor>
+      <React.StrictMode >
+        <RouterProvider router={router} />
+      </React.StrictMode>
+    </AuthContributor>
   </div>
 )
