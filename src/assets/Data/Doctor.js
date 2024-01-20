@@ -11,7 +11,7 @@ export const DoctorData =[
         "age": 40,
         "degree": ["MD in Cardiology", "MBBS"],
         "gender": "Male"
-    },
+    }, 
     {
         "ID": "D002",
         "DocName": "Dr. Johnson",
