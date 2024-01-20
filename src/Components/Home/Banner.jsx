@@ -35,11 +35,11 @@ const Banner = () => {
                     </div>
                     <div className='lg:hidden'>
                         <svg xmlns="http://www.w3.org/2000/svg" width="" height="700" viewBox="0 0 56 56" fill="none">
-                            <circle cx="28" cy="58" r="28" fill="#A5CCFF" />
+                            <circle cx="28" cy="70" r="28" fill="#A5CCFF" />
                         </svg>
                     </div>
 
-                    <img className='absolute -mt-[600px] lg:-ml-[140px] -ml-[60px] w-[798px] h-[600px]' src={banner} alt="" />
+                    <img className='absolute lg:-mt-[655px]  -mt-[264px] lg:-ml-[140px] -ml-[40px] w-[798px]' src={banner} alt="" />
                 </div>
 
             </div>

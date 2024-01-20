@@ -86,7 +86,7 @@ const Register = () => {
         <div>
             <div className="min-h-screen bg-gray-100 flex items-center justify-center">
                 <div className="max-w-4xl w-full mx-auto bg-white p-8 border border-gray-200 rounded-lg shadow-lg flex  items-center overflow-hidden">
-                    <div className="w-2/5 bg-blue-50 p-8 items-center justify-center lg:block hidden">
+                    <div className="w-2/5  p-8 items-center justify-center lg:block hidden">
                         <Lottie animationData={animation}></Lottie>
                     </div>
                     <div className="lg:w-3/5 p-8">

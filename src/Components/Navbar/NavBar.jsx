@@ -28,14 +28,27 @@ const NavBar = () => {
                         </div>
                         <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
 
-                            <Link to='/' className="hover:text-[#0360D9]">Home</Link>
-                            <Link className="hover:text-[#0360D9]">About Us</Link>
-                            <Link className="hover:text-[#0360D9]">Application</Link>
-                            <Link className="hover:text-[#0360D9]">History</Link>
+                            {
+                                user ?
+                                    <>
+                                        <Link to='/' className="hover:text-[#0360D9]">Home</Link>
+                                        <Link className="hover:text-[#0360D9]">About Us</Link>
+                                        <Link className="hover:text-[#0360D9]">Application</Link>
+                                        <Link className="hover:text-[#0360D9]">History</Link>
+                                    </>
+                                    :
+                                    <>
+                                        <Link to='/' className="hover:text-[#0360D9]">Home</Link>
+                                        <Link className="hover:text-[#0360D9]">About Us</Link>
+                                        <Link className="hover:text-[#0360D9]">Application</Link>
+                                        <Link className="hover:text-[#0360D9]">History</Link>
 
 
-                            <Link to='/login' className="hover:text-[#0360D9]">Log in</Link>
-                            <Link to='/register' className="hover:text-[#0360D9]">Sign up</Link>
+                                        <Link to='/login' className="hover:text-[#0360D9]">Log in</Link>
+                                        <Link to='/register' className="hover:text-[#0360D9]">Sign up</Link>
+                                    </>
+                            }
+
 
 
 
@@ -57,9 +70,12 @@ const NavBar = () => {
                         <li className="flex">
                             <a rel="noopener noreferrer" href="#" className="flex items-center px-4 -mb-1 text-xl hover:text-[#0360D9] hover:underline">About Us</a>
                         </li>
-                        <li className="flex">
+                        <Link to='/doctor' className="flex">
                             <a rel="noopener noreferrer" href="#" className="flex items-center px-4 -mb-1 text-xl hover:text-[#0360D9] hover:underline ">Doctor's</a>
-                        </li>
+                        </Link>
+                        <Link to='/contact' className="flex">
+                            <a rel="noopener noreferrer" href="#" className="flex items-center px-4 -mb-1 text-xl hover:text-[#0360D9] hover:underline ">Contact Us</a>
+                        </Link>
 
 
 
