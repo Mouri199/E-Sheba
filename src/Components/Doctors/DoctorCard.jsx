@@ -1,6 +1,7 @@
 import { DoctorData } from "../../assets/Data/Doctor";
 import { SlCalender } from "react-icons/sl";
 import { TbCoinTaka } from "react-icons/tb";
+import { TbGenderGenderqueer } from "react-icons/tb";
 
 
 const DoctorCard = () => {
@@ -20,8 +21,13 @@ const DoctorCard = () => {
                                 </a>
                                 <p className="mb-3 font-normal lg:text-lg text-sm text-gray-700 dark:text-gray-400">{data.DocType}</p>
                                 <hr className="my-4" />
+
                                 <p className="flex items-center lg:text-lg text-sm gap-3"><SlCalender />Available {data.startAvail >= 12 ? data.startAvail % 12 : data.startAvail} {data.startAvail >= 12 ? 'PM' : 'AM'} to {data.endAvail >= 12 ? data.endAvail % 12 : data.endAvail} {data.endAvail >= 12 ? 'PM' : 'AM'}</p>
+
                                 <p className="flex items-center gap-3 lg:text-lg text-sm my-2"><TbCoinTaka />{data.serviceFee}</p>
+
+                                <p className="flex items-center gap-3 lg:text-lg text-sm my-2"><TbGenderGenderqueer /> {data.gender}</p>
+
                                 <button className="btn bg-[#0360D9] text-white  w-full">View Profile</button>
                             </div>
                         </div>

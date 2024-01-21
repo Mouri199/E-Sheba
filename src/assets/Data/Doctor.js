@@ -12,7 +12,7 @@ export const DoctorData =[
         "startAvail": 7,
         "endAvail":15,
         "degree": ["MD in Cardiology", "MBBS"],
-        "gender": "male",
+        "gender": "Male",
         "serviceFee":100
     },
     {
@@ -25,7 +25,7 @@ export const DoctorData =[
         "startAvail": 13,
         "endAvail":19,
         "degree": ["Pediatrician", "MBBS"],
-        "gender": "female",
+        "gender": "Female",
         "serviceFee":300
     },
     {
@@ -38,7 +38,7 @@ export const DoctorData =[
         "startAvail": 9,
         "endAvail":15,
         "degree": ["Dermatology", "MBBS"],
-        "gender": "male",
+        "gender": "Male",
         "serviceFee":200
     },
     {
@@ -51,7 +51,7 @@ export const DoctorData =[
         "startAvail": 11,
         "endAvail":19,
         "degree": ["Orthopedic Surgery", "MBBS"],
-        "gender": "male",
+        "gender": "Male",
         "serviceFee":100
     },
     {
@@ -64,7 +64,7 @@ export const DoctorData =[
         "startAvail": 8,
         "endAvail":14,
         "degree": ["Ophthalmology", "MBBS"],
-        "gender": "male",
+        "gender": "Male",
         "serviceFee":200
     },
     {
@@ -77,20 +77,20 @@ export const DoctorData =[
         "startAvail": 10,
         "endAvail":21,
         "degree": ["Gynecology", "MBBS"],
-        "gender": "female",
+        "gender": "Female",
         "serviceFee":100
     },
     {
         "ID": "D007",
         "DocName": "Dr. Moore",
-        "image": "https://i.ibb.co/PMXLdHC/confident-young-female-medical-doctor-938369.jpg",
+        "image": "https://i.ibb.co/PMXLdHC/confident-young-Female-medical-doctor-938369.jpg",
         "DocType": "Neurologist",
         "service": "Neurological Disorders",
         "age": 42,
         "startAvail": 9,
         "endAvail":19,
         "degree": ["Neurology", "MBBS"],
-        "gender": "female",
+        "gender": "Female",
         "serviceFee":400
     },
     {
@@ -103,7 +103,7 @@ export const DoctorData =[
         "startAvail": 16,
         "endAvail":18,
         "degree": ["Dentistry", "MBBS"],
-        "gender": "male",
+        "gender": "Male",
         "serviceFee":100
     },
     {
@@ -116,7 +116,7 @@ export const DoctorData =[
         "startAvail": 11,
         "endAvail":17,
         "degree": ["Psychiatry", "MBBS"],
-        "gender": "female",
+        "gender": "Female",
         "serviceFee":500
     },
     {
@@ -129,7 +129,7 @@ export const DoctorData =[
         "startAvail": 10,
         "endAvail":19,
         "degree": ["Allergy and Immunology", "MBBS"],
-        "gender": "female",
+        "gender": "Female",
         "serviceFee":300
     },
     {
@@ -142,7 +142,7 @@ export const DoctorData =[
         "startAvail": 14,
         "endAvail":17,
         "degree": ["Urology", "MBBS"],
-        "gender": "male",
+        "gender": "Male",
         "serviceFee":300
     },
     {
@@ -155,7 +155,7 @@ export const DoctorData =[
         "startAvail": 9,
         "endAvail":18,
         "degree": ["Rheumatology", "MBBS"],
-        "gender": "male",
+        "gender": "Male",
         "serviceFee":300
     },
     {
@@ -168,7 +168,7 @@ export const DoctorData =[
         "startAvail": 15,
         "endAvail":17,
         "degree": ["Otolaryngology", "MBBS"],
-        "gender": "male",
+        "gender": "Male",
         "serviceFee":300
     },
     {
@@ -181,7 +181,7 @@ export const DoctorData =[
         "startAvail": 19,
         "endAvail":23,
         "degree": ["Endocrinology", "MBBS", "PhD"],
-        "gender": "male",
+        "gender": "Male",
         "serviceFee":500
     },
     {
@@ -194,7 +194,7 @@ export const DoctorData =[
         "startAvail": 18,
         "endAvail":22,
         "degree": ["Pulmonology", "MBBS"],
-        "gender": "female",
+        "gender": "Female",
         "serviceFee":100
     }
 

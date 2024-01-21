@@ -22,18 +22,37 @@ const Doctors = () => {
                     <h1 className="text-xl font-medium ">Category</h1>
                     <hr className="my-4" />
                     <div className="mb-3">
-                        <p>Health Suggestion</p>
-                        <p>Skin Care Suggestion</p>
-                        <p>Mental Health Suggestion</p>
-                        <p>Psychiatrist</p>
-                        <p>Gynecologist</p>
+                        <div className="flex gap-2">
+                            <input type="checkbox" name="" id="" />
+                            <p>Health Suggestion</p>
+                        </div>
+
+                        <div className="flex gap-2">
+                            <input type="checkbox" name="" id="" />
+                            <p>Skin Care Suggestion</p>
+                        </div>
+
+                        <div className="flex gap-2">
+                            <input type="checkbox" name="" id="" />
+                            <p>Mental Health Suggestion</p>
+                        </div>
+
+                        <div className="flex gap-2">
+                            <input type="checkbox" name="" id="" />
+                            <p>Psychiatrist</p>
+                        </div>
+
+                        <div className="flex gap-2">
+                            <input type="checkbox" name="" id="" />
+                            <p>Gynecologist</p>
+                        </div>
                     </div>
                     <h1 className="text-xl font-medium ">Session Price</h1>
                     <hr className="my-4" />
                     <div className="flex items-center my-3">
-                        <input placeholder="mini" className="border w-[70px]" type="text" name="" id="" />
+                        <input placeholder="mini" className="border rounded-lg w-[70px]" type="text" name="" id="" />
                         <p className="mx-3">-</p>
-                        <input placeholder="maxi" className="border w-[70px]" type="text" name="" id="" />
+                        <input placeholder="maxi" className="border rounded-lg w-[70px]" type="text" name="" id="" />
                         <button className="bg-[#0360D9] ml-3 p-2 rounded-lg text-white">Apply</button>
                     </div>
                     <div>
@@ -81,11 +100,31 @@ const Doctors = () => {
                                 <h1 className="text-xl font-medium ">Category</h1>
                                 <hr className="my-4" />
                                 <div className="mb-3">
-                                    <p>Health Suggestion</p>
-                                    <p className="my-2">Skin Care Suggestion</p>
-                                    <p>Mental Health Suggestion</p>
-                                    <p>Psychiatrist</p>
-                                    <p>Gynecologist</p>
+
+                                    <div className="flex gap-2">
+                                        <input type="checkbox" name="" id="" />
+                                        <p>Health Suggestion</p>
+                                    </div>
+
+                                    <div className="flex gap-2">
+                                        <input type="checkbox" name="" id="" />
+                                        <p>Skin Care Suggestion</p>
+                                    </div>
+
+                                    <div className="flex gap-2">
+                                        <input type="checkbox" name="" id="" />
+                                        <p>Mental Health Suggestion</p>
+                                    </div>
+
+                                    <div className="flex gap-2">
+                                        <input type="checkbox" name="" id="" />
+                                        <p>Psychiatrist</p>
+                                    </div>
+
+                                    <div className="flex gap-2">
+                                        <input type="checkbox" name="" id="" />
+                                        <p>Gynecologist</p>
+                                    </div>
                                 </div>
                                 <h1 className="text-xl font-medium ">Session Price</h1>
                                 <hr className="my-4" />
