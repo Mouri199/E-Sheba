@@ -1,11 +1,22 @@
+import React from "react";
 import DoctorCard from "./DoctorCard";
+// import component 👇
+import Drawer from 'react-modern-drawer'
+
+//import styles 👇
+import 'react-modern-drawer/dist/index.css'
 
 
 const Doctors = () => {
+
+    const [isOpen, setIsOpen] = React.useState(false)
+    const toggleDrawer = () => {
+        setIsOpen((prevState) => !prevState)
+    }
     return (
         <div>
             <div className="flex gap-16">
-                <div className="mt-10">
+                <div className="mt-10 lg:block hidden">
                     <h1 className="text-2xl font-semibold">Filters</h1>
                     <hr className="my-4" />
                     <h1 className="text-xl font-medium ">Category</h1>
@@ -29,7 +40,7 @@ const Doctors = () => {
 
                 </div>
                 <div className="border">
-                    <div className="mt-10">
+                    <div className="mt-10 mx-5 flex items-center">
                         <fieldset className="w-full space-y-1 ">
                             <label className="hidden">Search</label>
                             <div className="relative">
@@ -40,9 +51,42 @@ const Doctors = () => {
                                         </svg>
                                     </button>
                                 </span>
-                                <input type="search" name="Search" placeholder="Search doctor..." className="w-32 py-2 pl-10 text-sm rounded-md lg:w-[400px] sm:w-auto border" />
+                                <input type="search" name="Search" placeholder="Search doctor..." className="w-48 py-2 pl-10 text-sm rounded-md lg:w-[400px] border" />
                             </div>
                         </fieldset>
+
+                        <button onClick={toggleDrawer} className="btn-sm lg:hidden bg-[#0360D9]  rounded-lg text-white">Filter</button>
+                        <Drawer
+                            open={isOpen}
+                            onClose={toggleDrawer}
+                            direction='left'
+                            className='bla bla bla'
+                        >
+                            <div className="mt-5 ml-5 lg:hidden">
+                                <h1 className="text-2xl font-semibold">Filters</h1>
+                                <hr className="my-4" />
+                                <h1 className="text-xl font-medium ">Category</h1>
+                                <hr className="my-4" />
+                                <div className="mb-3">
+                                    <p>Health Suggestion</p>
+                                    <p>Skin Care Suggestion</p>
+                                    <p>Mental Health Suggestion</p>
+                                    <p>Psychiatrist</p>
+                                    <p>Gynecologist</p>
+                                </div>
+                                <h1 className="text-xl font-medium ">Session Price</h1>
+                                <hr className="my-4" />
+                                <div className="flex items-center my-3">
+                                    <input placeholder="mini" className="border w-[70px]" type="text" name="" id="" />
+                                    <p className="mx-3">-</p>
+                                    <input placeholder="maxi" className="border w-[70px]" type="text" name="" id="" />
+
+                                </div>
+                                <button className="bg-[#0360D9] ml-3 p-2 rounded-lg text-white">Apply</button>
+
+
+                            </div>
+                        </Drawer>
 
 
                     </div>
