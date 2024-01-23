@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 import DoctorCard from "./DoctorCard";
 // import component 👇
 import Drawer from 'react-modern-drawer'
@@ -8,6 +9,12 @@ import 'react-modern-drawer/dist/index.css'
 
 
 const Doctors = () => {
+    const linkVariants = {
+        hover: {
+            scale: 1.1,
+            transition: { duration: 0.2 },
+        },
+    };
 
     const [isOpen, setIsOpen] = React.useState(false)
     const toggleDrawer = () => {
@@ -53,7 +60,7 @@ const Doctors = () => {
                         <input placeholder="mini" className="border rounded-lg w-[70px]" type="text" name="" id="" />
                         <p className="mx-3">-</p>
                         <input placeholder="maxi" className="border rounded-lg w-[70px]" type="text" name="" id="" />
-                        <button className="bg-[#0360D9] ml-3 p-2 rounded-lg text-white">Apply</button>
+                        <motion.button whileHover="hover"  variants={linkVariants} className="bg-[#0360D9] ml-3 p-2 rounded-lg text-white">Apply</motion.button>
                     </div>
                     <div>
                         <h1 className="text-xl font-medium">Gender</h1>
@@ -65,6 +72,10 @@ const Doctors = () => {
                         <div className="flex gap-2">
                             <input type="checkbox" name="" id="" />
                             <p>Female</p>
+                        </div>
+                        <div className="flex gap-2">
+                            <input type="checkbox" name="" id="" />
+                            <p>All</p>
                         </div>
 
                     </div>

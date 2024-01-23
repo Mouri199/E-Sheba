@@ -7,13 +7,13 @@ const Footer = () => {
                 <div className="container mx-auto px-4 md:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                     <div>
                         <h3 className="text-lg font-semibold mb-2">Contact Information</h3>
-                        <p className="text-sm mb-1">Phone: (123) 456-7890</p>
-                        <p className="text-sm">Email: info@company.com</p>
+                        <p className="text-sm mb-1">Phone: +8801765223465</p>
+                        <p className="text-sm">Email:management@gmail.com</p>
                     </div>
                     <div>
                         <h3 className="text-lg font-semibold mb-2">Address</h3>
-                        <p className="text-sm">123 Main St,</p>
-                        <p className="text-sm">City, State, 12345</p>
+                        <p className="text-sm">47Th,Avenue</p>
+                        <p className="text-sm">Banghladesh,Dhaka</p>
                     </div>
                     <div>
                         <h3 className="text-lg font-semibold mb-2">Follow Us</h3>

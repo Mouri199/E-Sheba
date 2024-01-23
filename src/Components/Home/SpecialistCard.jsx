@@ -14,10 +14,12 @@ const SpecialistCard = () => {
                         <div key={data.title}>
                             <div className="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow  lg:h-[240px] ">
                                 <img className="bg-[#E6F5FC] p-2 rounded-full" src={data.image} alt="" />
-                                <a href="#">
-                                    <h5 className="mb-2 mt-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{data.title}</h5>
-                                </a>
-                                <p className="mb-3 font-normal text-gray-500 dark:text-gray-400">{data.details}</p>
+                                <div className=" transition ease-in-out hover:scale-105 duration-300 hover:-translate-y-1">
+                                    <a href="#">
+                                        <h5 className="mb-2 mt-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{data.title}</h5>
+                                    </a>
+                                    <p className="mb-3 font-normal text-gray-500 dark:text-gray-400">{data.details}</p>
+                                </div>
 
                             </div> </div>
 

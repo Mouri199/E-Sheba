@@ -34,7 +34,7 @@ const ChooseUs = () => {
                 </div>
             </div>
             <div>
-                <img className='lg:w-[700px]' src={img1} alt="" />
+                <img className='lg:w-[700px] transition ease-in-out hover:scale-110 duration-300 hover:-translate-y-1' src={img1} alt="" />
             </div>
 
         </div>
